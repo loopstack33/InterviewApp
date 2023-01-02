@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:interview_app/splashScreen.dart';
 
 void main() async {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (BuildContext context, _) {
-          return MaterialApp(
+          return GetMaterialApp(
               theme: ThemeData(
                   brightness: Brightness.dark,
                   pageTransitionsTheme: const PageTransitionsTheme(builders: {
